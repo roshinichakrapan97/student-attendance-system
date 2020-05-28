@@ -1,0 +1,44 @@
+<html>
+<head>
+<link href="master.css" rel="stylesheet">
+<link href="share.css" rel="stylesheet">
+</head>
+<body bgcolor="white">
+<header>
+<h1>
+ATTENDANCE CHART</h1>
+</header>
+<nav>
+<a href="college.html"> ADMIN PAGE </a><br>
+<a href="attendance.html"> ATTENDANCE</a><br>
+<a href="timetable.php">TIMETABLE</a>
+<br><a href="defaulter.html"> DEFAULTERS LIST</a><br>
+</nav>
+<br><br>
+<form action="pie_disp.php" name="myForm" method="POST">
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="pin"> 
+STUDENT PIN: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="number" name="pin" id="pin">
+</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="subj"> SELECT SUBJECT:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<select name="subj">
+	<option value="CN">CN</option>
+	<option value="GM">GM</option>
+	<option value="OOAD">OOAD</option>
+	<option value="DS">DS</option>
+	<option value="DIP">DIP</option>
+	<option value="IP">IP</option>
+</select>	
+</p>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="submit" value="SUBMIT" id="submit">
+</p>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form action="logout.php">
+<input type ="submit" name="logout" value="LOGOUT" style="float:right;">
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<link href="master.css" rel="stylesheet">
+<link href="share.css" rel="stylesheet">
+
+<script>
+
+
+function validate()
+{
+if(document.myForm.number.value=="")
+{
+	alert("please enter serial number");
+	document.myForm.number.focus();
+	return false;
+}
+else if(document.myForm.name.value=="")
+{
+	alert("please enter student name");
+	document.myForm.name.focus();
+	return false;
+}
+if(document.myForm.pin.value=="")
+{
+	alert("please enter student pin");
+	document.myForm.pin.focus();
+	return false;
+}
+else if(document.myForm.department.value=="")
+{
+	alert("please enter student department");
+	document.myForm.department.focus();
+	return false;
+}
+if(document.myForm.email.value=="")
+{
+	alert("please enter parents email");
+	document.myForm.email.focus();
+	return false;
+}
+else if(document.myForm.pin.value.length!=10)
+{
+	alert("please enter a valid PIN number");
+	document.myForm.pin.focus();
+	return false;
+}
+
+
+}
+</script>
+
+</head>
+<body bgcolor="white">
+<header><center><h1>MADRAS INSTITUTE OF TECHNOLOGY</h1></center></header>
+<nav>
+
+
+<a href="attendance.html"> ATTENDANCE</a><br>
+<a href="pie1.html"> ATTENDANCE CHART</a><br>
+<a href="defaulter.html"> DEFAULTER LIST</a><br>
+<a href="timetable.php"> TIMETABLE</a><br>
+</nav><br>
+<center>
+
+<form action="add.php" name="myForm" method="POST" onsubmit="return (validate());">
+
+<p><label for="number">SERIAL NUMBER:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="number" id="number">
+</p>
+
+<p><label for="name">STUDENT NAME:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="name" id="name">
+</p>
+
+<p><label for="pin">STUDENT ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="pin" id="pin">
+</p>
+
+<p><label for="department">DEPARTMENT:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="department" id="department">
+</p>
+
+<p><label for="email">PARENTS EMAIL ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="email" id="email">
+</p>
+
+<p>
+<input type="submit" name="ADD" value="ADD" onclick="add.php">
+<input type="submit" name="UPDATE" value="UPDATE" onclick="ch.php">
+<input type="submit" name="CANCEL" value="CANCEL" onclick="ch.php">
+</form>
+
+
+</CENTER>
+<br><br><br><br><br><br><br><br><br><br><br>
+<form action="logout.php">
+<input type ="submit" name="logout" value="LOGOUT" style="float:right;">
+</form>
+</body>
+</html>

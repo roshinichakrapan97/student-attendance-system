@@ -1,0 +1,40 @@
+<html>
+<head>
+<link href="master.css" rel="stylesheet">
+<link href="share.css" rel="stylesheet">
+
+</head>
+<body bgcolor="white">
+<header>
+<h1>
+ATTENDANCE</h1>
+</header>
+<nav>
+<a href="college.html"> ADMIN PAGE </a><br>
+
+<a href="pie1.html"> ATTENDANCE CHART</a><br>
+<a href="defaulter.html"> DEFAULTER LIST</a><br>
+<a href="timetable.php"> TIMETABLE</a><br>
+</nav>
+<br><br>
+<form action="att_det.php" name="myForm" method="POST" onsubmit="return (validate());">
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="number">STUDENT ID:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="number" name="number" id="number">
+</p>
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="name">DATE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="date" id="date">
+
+</p>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="SEARCH" value="SEARCH" id="search">
+</p>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form action="logout.php">
+<input type ="submit" name="logout" value="LOGOUT" style="float:right;">
+</form>
+</body>
+</html>

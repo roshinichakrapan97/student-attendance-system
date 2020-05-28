@@ -1,0 +1,39 @@
+<html>
+<head>
+<link href="master.css" rel="stylesheet">
+<link href="share.css" rel="stylesheet">
+
+</head>
+<body bgcolor="white">
+<header>
+<h1>
+ATTENDANCE</h1>
+</header>
+<nav>
+<a href="s_pie1.html"> ATTENDANCE CHART</a><br>
+<a href="mark.php">MARK ATTENDANCE</a><br>
+<a href="s_show.php">SHOW TIMETABLE</a><br>
+<a href="s_defaulter.html"> DEFAULTERS LIST</a><br>
+</nav>
+<br><br>
+<form action="s_att_det.php" name="myForm" method="POST" onsubmit="return (validate());">
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="number">STUDENT ID:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="number" id="">
+</p>
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="date">DATE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="date" id="demo" />
+
+</p>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="SEARCH" value="SEARCH" id="search">
+</p>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form action="logout.php">
+<input type ="submit" name="logout" value="LOGOUT" style="float:right;">
+</form>
+</body>
+</html>

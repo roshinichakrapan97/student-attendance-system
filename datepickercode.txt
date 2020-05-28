@@ -1,0 +1,3 @@
+<script src="datetimepicker_css.js"></script>
+
+<img src="cal.gif" onclick="javascript:NewCssCal('demo')" style="cursor:pointer"/>

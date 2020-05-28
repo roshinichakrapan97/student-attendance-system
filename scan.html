@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<link href="share.css" rel="stylesheet">
+<link href="master.css" rel="stylesheet">
+<script>
+function validate()
+{
+if(document.myForm.scan.value=="")
+{
+	alert("please enter barcode");
+	document.myForm.scan.focus();
+	return false;
+}
+}
+</script>
+</head>
+
+<body>
+<header><center><h1> MARK ATTENDANCE </h1></center></header>
+<nav>
+<a href="s_attendance.html">ATTENDANCE</a><br>
+<a href="s_show.php">SHOW TIMETABLE</a><br>
+<a href="s_pie1.html"> ATTENDANCE CHART</a><br>
+<a href="s_defaulter.html">DEFAULTERS LIST</a><br>
+
+</nav>
+<br><br>
+<p><center><h2> SCAN YOUR ID TO MARK ATTENDANCE </h2></center></p>
+<p><p><p>
+<center><br>
+
+<form action="scan.php" name="myForm" method="POST" onsubmit="return (validate());">
+<label for="scan">BARCODE</label>
+<input type="text" name="regno" id="regno">
+<p>
+<input type="submit" name="SUBMIT" value="SUBMIT" onclick="scan.php">
+<input type="button" onclick="location.href='mark.html';" value="EXIT" />
+</center>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<form action="logout.php">
+<input type ="submit" name="logout" value="LOGOUT" style="float:right;">
+</form>
+
+
+</body>
+</html>

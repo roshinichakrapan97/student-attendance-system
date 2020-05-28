@@ -1,0 +1,50 @@
+<html>
+<head>
+<link href="master.css" rel="stylesheet">
+<link href="share.css" rel="stylesheet">
+</head>
+<body bgcolor="white">
+<header>
+<h1>
+DEFAULTER LIST</h1>
+</header>
+<nav>
+
+<a href="s_attendance.html"> ATTENDANCE</a><br>
+<a href="s_pie1.html"> ATTENDANCE CHART</a><br>
+<a href="s_show.php"> TIMETABLE</a><br>
+<a href="mark.php"> MARK ATTENDANCE</a>
+<br>
+</nav>
+<br><br>
+<form action="s_def_list.php" name="myForm" method="POST" onsubmit="return (validate());">
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="subj"> SELECT SUBJECT:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<select name="subj">
+	<option value="CN">CN</option>
+	<option value="GM">GM</option>
+	<option value="OOAD">OOAD</option>
+	<option value="DS">DS</option>
+	<option value="DIP">DIP</option>
+	<option value="IP">IP</option>
+</select>	
+</p>
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="fromdate"> FROM DATE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="fromdate" id="fromdate">
+</p>
+
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="todate"> TO DATE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" name="todate" id="todate">
+</p>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="list" value="LIST" id="list">
+</p>
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<form action="logout.php">
+<input type ="submit" name="logout" value="LOGOUT" style="float:right;">
+</form>
+</body>
+</html>

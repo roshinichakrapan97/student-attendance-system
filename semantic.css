@@ -1,0 +1,18 @@
+nav{
+line-height:30px;
+background-color:black;
+height:760px;
+width:200px;
+float:left;
+color:blue;
+padding:5px;
+}
+section{
+float:left;
+
+padding:10px;
+}
+img{display:inline;
+border:3px solid black;
+
+}
